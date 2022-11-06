@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <title>Formulario </title>
+    </head>
+
+    <body>  
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo">Formulario</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+        
+        <form action="/pagina-processa-dados-do-form" method="post">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="usuario_nome" id="nome"/>
+    </div>
+    <div>
+        <label for="idade">Idade:</label>
+        <input type="idade" name="usuario_idade" id="idade"/>
+    </div>
+    <div>
+        <label for="profissao">Profissão:</label>
+        <input type="profissao" name="usuario_profissao" id="profissao"/>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="usuario_email" id="email"/>
+    </div>
+    <div>
+        <label for="telefone">Telefone:</label>
+        <input type="telefone" name="usuario_telefone" id="telefone"/>
+    </div>
+    <div>
+        <label for="datadepreenchimento">Data de Preenchimento:</label>
+        <input type="datadepreenchimento" name="usuario_data" id="datadepreenchimento"/>
+    </div>
+    <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" name="usuario_msg"></textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+    </div>
+</form>
+
+
+</body>
+
+</html>
